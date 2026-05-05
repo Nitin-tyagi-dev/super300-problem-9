@@ -1,6 +1,6 @@
 @echo off
 setlocal
-
+//maven version
 set "MAVEN_VERSION=3.9.9"
 set "BASE_DIR=%~dp0"
 set "MVN_HOME=%BASE_DIR%.mvn\apache-maven-%MAVEN_VERSION%"
