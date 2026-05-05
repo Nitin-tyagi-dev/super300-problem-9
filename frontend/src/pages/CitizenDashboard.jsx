@@ -58,7 +58,7 @@ export default function CitizenDashboard() {
           <button className="rounded bg-red-600 px-3 py-2">Submit</button>
         </form>
 
-        <div className="space-y-4">
+        <div className="space-y-4"> // added citizen dashboard 
           <section className="rounded border border-slate-700 p-4">
             <h2 className="font-semibold">Active Alerts</h2>
             <div className="mt-2 space-y-2">
