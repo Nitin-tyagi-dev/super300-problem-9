@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+MAVEN_VERSION=3.9.9
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+MVN_HOME="$BASE_DIR/.mvn/apache-maven-$MAVEN_VERSION"
+MVN_EXE="$MVN_HOME/bin/mvn"
+
+if [ ! -x "$MVN_EXE" ]; then
+  echo "Downloading Maven $MAVEN_VERSION for local wrapper..."
+  mkdir -p "$BASE_DIR/.mvn"
+  ZIP_PATH="$BASE_DIR/.mvn/apache-maven-$MAVEN_VERSION-bin.zip"
+  URL="https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.zip"
+  curl -fsSL "$URL" -o "$ZIP_PATH" || exit 1
+  unzip -oq "$ZIP_PATH" -d "$BASE_DIR/.mvn" || exit 1
+fi
+
+exec "$MVN_EXE" "$@"
