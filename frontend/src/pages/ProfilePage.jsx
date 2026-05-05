@@ -7,6 +7,7 @@ export default function ProfilePage() {
     <div className="mx-auto max-w-3xl p-6">
       <h1 className="text-2xl font-semibold">Profile</h1>
       <div className="mt-4 rounded border border-slate-700 p-4">
+        <p>jb jhb  hdbvv dfvbdf dfivbdf ibvdf v if dfjjbdf jkbfdmvj dfm.vn,bvfm </p>
         <p><strong>Name:</strong> {user?.name || "-"}</p>
         <p><strong>Phone:</strong> {user?.phone || "-"}</p>
         <p><strong>Email:</strong> {user?.email || "-"}</p>
