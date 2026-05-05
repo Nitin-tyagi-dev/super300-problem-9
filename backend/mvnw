@@ -13,5 +13,5 @@ if [ ! -x "$MVN_EXE" ]; then
   curl -fsSL "$URL" -o "$ZIP_PATH" || exit 1
   unzip -oq "$ZIP_PATH" -d "$BASE_DIR/.mvn" || exit 1
 fi
-
+//mnvw
 exec "$MVN_EXE" "$@"
