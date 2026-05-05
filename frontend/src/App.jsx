@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+import { Route, Routes } from "react-router"
+import Registration from "./pages/Registration"
+import Login from "./pages/Login"
+import Home from "./pages/Home"
+function App() {
+  return (
+    <>
+    <Routes>
+      <Route path="/registration" element={<Registration/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/" element={<Home/>}/>
+    </Routes>
+    </>
+  )
+}
+
+export default App
+=======
 import { Navigate, Route, Routes } from "react-router-dom";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import LandingPage from "./pages/LandingPage";
@@ -70,3 +89,4 @@ export default function App() {
     </Routes>
   );
 }
+>>>>>>> origin/main
