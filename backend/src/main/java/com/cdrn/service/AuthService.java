@@ -60,6 +60,7 @@ public class AuthService {
         }
         if (!otp.getOtp().equals(request.getOtp())) {
             throw new IllegalArgumentException("Invalid OTP.");
+            //added otp system
         }
 
         otp.setUsed(true);
@@ -71,6 +72,7 @@ public class AuthService {
     public Map<String, Object> register(AuthDtos.RegisterRequest request) {
         userRepository.findByPhone(request.getPhone()).ifPresent(u -> {
             throw new IllegalArgumentException("Phone already registered.");
+            //added map 
         });
 
         User user = User.builder()
@@ -104,6 +106,7 @@ public class AuthService {
 
     private Map<String, Object> authResponse(User user) {
         Map<String, Object> userPayload = new HashMap<>();
+        // added somthing
         userPayload.put("id", user.getId());
         userPayload.put("name", user.getName());
         userPayload.put("phone", user.getPhone());
