@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public interface AlertRepository extends MongoRepository<Alert, String> {
+    //added new alerts repo
     List<Alert> findByTargetDistrictsContaining(String district);
     List<Alert> findBySeverityAndExpiresAtAfter(Enums.AlertSeverity severity, LocalDateTime now);
     @Query("{ 'expiresAt': { $gt: ?0 } }")
