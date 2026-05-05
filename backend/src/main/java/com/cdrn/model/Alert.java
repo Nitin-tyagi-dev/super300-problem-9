@@ -33,4 +33,5 @@ public class Alert {
     private boolean pushSent;
     private LocalDateTime issuedAt;
     private LocalDateTime expiresAt;
+    //this give alert
 }
