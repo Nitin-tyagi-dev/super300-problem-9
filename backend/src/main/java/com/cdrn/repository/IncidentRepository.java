@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.List;
 
 public interface IncidentRepository extends MongoRepository<Incident, String> {
+    //added notification repo
     List<Incident> findByStatusAndDistrict(Enums.IncidentStatus status, String district);
     List<Incident> findByStatus(Enums.IncidentStatus status);
     List<Incident> findByIsSOSTrue();
