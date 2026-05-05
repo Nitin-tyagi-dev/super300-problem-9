@@ -7,6 +7,7 @@ export default function AlertsPage() {
   useEffect(() => {
     fetchActiveAlerts();
   }, [fetchActiveAlerts]);
+    vkhjdvbk.ads cew cnrfguiw m,vmerio;vh,gqergvikuj4t 4cxmq efyvuc  wd mfvgfr8qeyu vdfbuyk fdsvghadiyvbaebnfv oadfyvadf vuyadf gvjkhadfd7ov nvaf vadfnvuy adfafnrveakv nadfvuya gdj,hfva dzy8oyv m,naefnv vuyaer gvjlhre vyudfvdfukv bjdfhv uafgv eavh,baefyfuv bsfb vesvsebvdsfukbv ydsf vbdsfbv8dsfbv dsugy vdsfhjv uydfv hvibidk, bdhjl vblhdfv lfvh y
 
   return (
     <div className="mx-auto max-w-5xl p-6">
