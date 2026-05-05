@@ -10,4 +10,5 @@ import java.util.List;
 public interface ShelterRepository extends MongoRepository<Shelter, String> {
     List<Shelter> findByIsActiveAndDistrict(boolean active, String district);
     List<Shelter> findByLocationNear(Point point, Distance distance);
+    //shelter repository
 }
