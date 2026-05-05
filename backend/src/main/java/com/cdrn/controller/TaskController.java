@@ -46,6 +46,7 @@ public class TaskController {
         return taskRepository.save(task);
     }
 
+    //patch mapping
     @PatchMapping("/{id}/accept")
     public ResponseEntity<?> accept(@PathVariable String id, @RequestBody Map<String, String> body) {
         return taskRepository.findById(id)
