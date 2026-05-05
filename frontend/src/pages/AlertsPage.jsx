@@ -7,7 +7,7 @@ export default function AlertsPage() {
   useEffect(() => {
     fetchActiveAlerts();
   }, [fetchActiveAlerts]);
-
+   
   return (
     <div className="mx-auto max-w-5xl p-6">
       <h1 className="text-2xl font-semibold">Alerts</h1>

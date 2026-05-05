@@ -35,6 +35,7 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<Map<String, Object>> register(@Valid @RequestBody AuthDtos.RegisterRequest request) {
         return ResponseEntity.ok(authService.register(request));
+        // this was changed 
     }
 
     @PostMapping("/login")
