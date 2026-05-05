@@ -11,6 +11,7 @@ export default function AlertsPage() {
   return (
     <div className="mx-auto max-w-5xl p-6">
       <h1 className="text-2xl font-semibold">Alerts</h1>
+      // added alert page jbvjaevneonvoenvoenvoneovnoenvoenrvieinrovnonvsjnvweubpuebpubepugbwebpwenbnevnovnevfnonvoiwnvoenovineoii i ievievonevneo  ievoienvoineovn
       <div className="mt-4 space-y-2">
         {isLoading ? <p>Loading alerts...</p> : activeAlerts.map((alert) => (
           <div key={alert.id} className="rounded border border-slate-700 p-3">
