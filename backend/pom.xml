@@ -8,7 +8,7 @@
         <version>3.2.6</version>
         <relativePath/>
     </parent>
-
+//dependencies
     <groupId>com.cdrn</groupId>
     <artifactId>backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
